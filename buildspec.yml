@@ -1,5 +1,9 @@
 version: 0.1
 
+environment_variables:
+  plaintext:
+    batchuser_pass: "passWord"
+
 phases:
   install:
     commands:
@@ -19,7 +23,7 @@ phases:
       - sudo useradd -m -s /bin/bash  batchuser
       - echo batchuser:passWord | /usr/sbin/chpasswd
       - echo `cat /etc/passwd`
-      - echo "passWord" | sudo -S su batchuser
+      - echo ${batchuser_pass} | sudo -S su batchuser
       - cd ~
       - echo `pwd`
       - sudo sh test.sh
