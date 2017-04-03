@@ -21,7 +21,7 @@ phases:
       - su batchuser
       - cd ~
       - echo `pwd`
-      - sudo sh /test/test.sh
+      - sudo sh test.sh
       - echo Test completed on `date`
   post_build:
     commands:
