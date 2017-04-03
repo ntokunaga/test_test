@@ -16,7 +16,8 @@ phases:
       - echo `ls -l`
       - echo `cat /etc/passwd`
       - echo `cat /etc/lsb-release`
-      - sudo sh useradd.sh
+      - sudo useradd -m -s /bin/bash  batchuser
+      - echo 'passWord' | sudo passwd 9999999
       - echo `cat /etc/passwd`
       - su batchuser
       - cd ~
