@@ -19,7 +19,8 @@ phases:
       - echo `cat /etc/lsb-release`
       - sudo useradd -p 'passWord' batchuser
       - echo `cat /etc/passwd`
-      - echo `sudo su batchuser`
+      - su batchuser
+      - cd ~
       - echo `pwd`
       - echo Test completed on `date`
   post_build:
