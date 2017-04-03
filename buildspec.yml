@@ -19,7 +19,7 @@ phases:
       - sudo useradd -m -s /bin/bash  batchuser
       - echo batchuser:passWord | /usr/sbin/chpasswd
       - echo `cat /etc/passwd`
-      - su batchuser
+      - echo 'passWord' | sudo -S su batchuser
       - cd ~
       - echo `pwd`
       - sudo sh test.sh
