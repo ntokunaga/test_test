@@ -1,0 +1,25 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - echo pre_build on `date`
+      - apt-get install yum
+      - echo `yum list installed`
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Test started on `date`
+      - echo `pwd`
+      - echo `ls -l`
+      - echo `cat /etc/passwd`
+      - echo `cat /etc/lsb-release`
+      - sudo useradd -p 'passWord' batchuser
+      - echo `cat /etc/passwd`
+      - echo Test completed on `date`
+  post_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+
