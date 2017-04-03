@@ -17,7 +17,7 @@ phases:
       - echo `cat /etc/passwd`
       - echo `cat /etc/lsb-release`
       - sudo useradd -m -s /bin/bash  batchuser
-      - echo 'passWord' | sudo passwd batchuser
+      - echo `python -c 'import crypt, random, hashlib; random.seed(); print crypt.crypt("passWord", "$6$" + hashlib.sha1(str(random.random())).hexdigest())';` | sudo passwd batchuser
       - echo `cat /etc/passwd`
       - su batchuser
       - cd ~
