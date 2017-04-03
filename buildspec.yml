@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - echo pre_build on `date`
-      - apt-get install yum
+      - sudo apt-get install yum
       - echo `yum list installed`
   pre_build:
     commands:
