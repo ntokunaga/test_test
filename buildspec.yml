@@ -20,6 +20,7 @@ phases:
       - sudo useradd -p 'passWord' batchuser
       - echo `cat /etc/passwd`
       - sudo su --help
+      - sudo su - batchuser
       - echo Test completed on `date`
   post_build:
     commands:
