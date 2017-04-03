@@ -8,7 +8,7 @@ phases:
       - sudo apt-get -y install yum
       - echo `yum list installed`
       - ruby --version
-      - yum install zip
+      - sudo apt-get install zip
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
