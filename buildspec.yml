@@ -7,6 +7,9 @@ phases:
       - sudo apt-get update -y
       - sudo apt-get -y install yum
       - echo `yum list installed`
+      - sudo yum install gcc gcc-c++ make openssl-devel zlib-devel readline-devel ruby-devel
+      - sudo yum install rubygem20-aws-sdk
+      - gem install net-ssh
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
