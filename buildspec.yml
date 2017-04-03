@@ -6,9 +6,6 @@ phases:
       - echo pre_build on `date`
       - sudo apt-get update -y
       - sudo apt-get -y install yum
-      - echo `yum list installed`
-      - ruby --version
-      - dpkg -l
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
@@ -24,8 +21,7 @@ phases:
       - su batchuser
       - cd ~
       - echo `pwd`
-      - cd /test
-      - ./test.sh
+      - sh /test/test.sh
       - echo Test completed on `date`
   post_build:
     commands:
