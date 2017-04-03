@@ -22,7 +22,7 @@ phases:
       - su batchuser
       - cd ~
       - echo `pwd`
-      - ls /home/batchuser
+      - echo `ls /home/batchuser`
       - echo Test completed on `date`
   post_build:
     commands:
