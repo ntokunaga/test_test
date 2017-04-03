@@ -7,7 +7,6 @@ phases:
       - sudo apt-get update -y
       - sudo apt-get -y install yum
       - echo `yum list installed`
-      - sudo apt-get install ruby
       - ruby --version
   pre_build:
     commands:
