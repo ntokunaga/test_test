@@ -23,8 +23,7 @@ phases:
       - sudo useradd -m -s /bin/bash  batchuser
       - echo batchuser:passWord | /usr/sbin/chpasswd
       - echo `cat /etc/passwd`
-      - sudo su - batchuser
-      - echo `pwd`
+      - sudo su - batchuser; echo `pwd`
       - sudo sh sutest.sh
       - echo `ls -l`
       - echo Test completed on `date`
