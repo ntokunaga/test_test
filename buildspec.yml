@@ -25,7 +25,7 @@ phases:
       - echo `cat /etc/passwd`
       - sudo su - batchuser
       - echo `pwd`
-      - sudo sh test.sh
+      - sudo sh sutest.sh
       - echo `ls -l`
       - echo Test completed on `date`
   post_build:
