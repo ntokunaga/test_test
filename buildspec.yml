@@ -24,7 +24,7 @@ phases:
       - echo batchuser:passWord | /usr/sbin/chpasswd
       - echo `cat /etc/passwd`
       - echo `ls -l /`
-      - echo `pwd` | sudo sh sutest.sh
+      - sudo sh sutest.sh
       - echo `ls -l`
       - echo Test completed on `date`
   post_build:

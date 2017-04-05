@@ -1,16 +1,14 @@
 #!/bin/bash
 
-devpath = $(pwd)
 
 echo sutestStart!
 echo `pwd`
 echo pathresult!
-echo $devpath
-echo $1
+echo echo $(cd $(dirname $0) && pwd)
 sudo su - batchuser
 echo `pwd`
 echo `ls -l`
-mkdir -p $1/dev
+mkdir -p $(cd $(dirname $0) && pwd)/dev
 echo `ls -l`
 echo sutestFinish!
 
