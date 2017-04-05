@@ -14,5 +14,6 @@ touch $(cd $(dirname $0) && pwd)/test.log
 echo `ls -l`
 sudo chmod 755 $(cd $(dirname $0) && pwd)/test.log
 echo `ls -l`
+aws s3 cp $(cd $(dirname $0) && pwd)/test.log s3://ebisu-bucket/
 echo sutestFinish!
 
