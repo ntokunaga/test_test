@@ -10,6 +10,7 @@ phases:
       - echo pre_build on `date`
       - sudo apt-get update -y
       - sudo apt-get -y install yum
+      - sudo apt-get -y install groff
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
