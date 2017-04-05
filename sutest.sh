@@ -4,11 +4,15 @@
 echo sutestStart!
 echo `pwd`
 echo pathresult!
-echo echo $(cd $(dirname $0) && pwd)
+echo $(cd $(dirname $0) && pwd)
 sudo su - batchuser
 echo `pwd`
 echo `ls -l`
 mkdir -p $(cd $(dirname $0) && pwd)/dev
+echo `ls -l`
+touch $(cd $(dirname $0) && pwd)/test.log
+echo `ls -l`
+sudo chmod 755 $(cd $(dirname $0) && pwd)/test.log
 echo `ls -l`
 echo sutestFinish!
 
