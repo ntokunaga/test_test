@@ -1,5 +1,13 @@
 version: 0.0
 os: linux
+files:
+  - source: /README.md
+    destination: /home/batchuser/
+permissions:
+  - object: /home/batchuser/README.md
+    owner: batchuser
+    group: batchuser
+mode: 755
 hooks:
   AfterInstall:
     - location: scripts/main.sh
