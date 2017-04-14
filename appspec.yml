@@ -10,6 +10,6 @@ permissions:
     mode: 755
 hooks:
   AfterInstall:
-    - location: scripts/mkdir.sh
+    - location: scripts/main.sh
       runas: batchuser
 
