@@ -7,7 +7,7 @@ permissions:
   - object: /home/batchuser/README.md
     owner: batchuser
     group: batchuser
-mode: 755
+    mode: 755
 hooks:
   AfterInstall:
     - location: scripts/main.sh
