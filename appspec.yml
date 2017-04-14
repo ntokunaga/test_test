@@ -2,14 +2,12 @@ version: 0.0
 os: linux
 files:
   - source: /scripts/mkdir.sh
-    destination: /home/batchuser/scripts
+    destination: /home/batchuser
 permissions:
-  - object: /home/batchuser/scripts
+ - object: /home/batchuser/mkdir.sh
     owner: batchuser
     group: batchuser
     mode: 744
-    type:
-      - directory
 hooks:
   AfterInstall:
     - location: scripts/main.sh
