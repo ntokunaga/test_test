@@ -4,7 +4,7 @@ files:
   - source: /README.md
     destination: /home/batchuser/
   - source: /scripts/mkdir.sh
-    destination: /home/batchuser/
+    destination: /home/batchuser/scripts/
 permissions:
   - object: /home/batchuser/README.md
     owner: batchuser
