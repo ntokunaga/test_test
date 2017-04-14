@@ -1,2 +1,2 @@
 #!/bin/bash
-sh ./$HOME/scripts/mkdir.sh
+sh ./$HOME/mkdir.sh
