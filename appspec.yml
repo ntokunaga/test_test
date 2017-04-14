@@ -12,3 +12,4 @@ hooks:
   AfterInstall:
     - location: scripts/main.sh
 runas: batchuser
+
