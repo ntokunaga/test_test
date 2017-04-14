@@ -10,9 +10,20 @@ permissions:
     owner: batchuser
     group: batchuser
     mode: 755
+      - file    
   - object: /home/batchuser/scripts/
     owner: batchuser
     group: batchuser
+    mode: 744
+    type:
+      - directory
+  - object: /home/batchuser/scripts/
+    pattern: "*.sh"
+    owner: batchuser
+    group: batchuser
+    mode: 744
+    type:
+      - file
 hooks:
   AfterInstall:
     - location: scripts/main.sh
