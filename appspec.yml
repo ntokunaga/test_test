@@ -10,11 +10,6 @@ permissions:
     mode: 744
     type:
       - directory
-  - object: /home/batchuser/scripts/mkdir.sh
-    owner: batchuser
-    group: batchuser
-    mode: 744
-    type:
 hooks:
   AfterInstall:
     - location: scripts/main.sh
