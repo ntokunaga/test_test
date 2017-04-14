@@ -1,29 +1,20 @@
 version: 0.0
 os: linux
 files:
-  - source: /README.md
-    destination: /home/batchuser/
   - source: /scripts/mkdir.sh
-    destination: /home/batchuser/scripts/
+    destination: /home/batchuser/scripts
 permissions:
-  - object: /home/batchuser/README.md
-    owner: batchuser
-    group: batchuser
-    mode: 755
-      - file    
-  - object: /home/batchuser/scripts/
+  - object: /home/batchuser/scripts
     owner: batchuser
     group: batchuser
     mode: 744
     type:
       - directory
-  - object: /home/batchuser/scripts/
-    pattern: "*.sh"
+  - object: /home/batchuser/scripts/mkdir.sh
     owner: batchuser
     group: batchuser
     mode: 744
     type:
-      - file
 hooks:
   AfterInstall:
     - location: scripts/main.sh
