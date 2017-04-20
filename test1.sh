@@ -1,3 +1,3 @@
 #!/bin/bash
-  echo -e "Hello!\\n"
+  echo Hello!
   echo `whoami`
