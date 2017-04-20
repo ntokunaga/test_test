@@ -23,6 +23,10 @@ phases:
       - echo `runuser -l testtest -c "ls -l"`
       - echo `ls -l`
 
+      - echo `mv test1.sh /home/testtest/.`
+      - echo `chown testtest:testtest /home/testtest/test1.sh`
+      - echo `runuser -l testtest -c "sh test1.sh"`
+
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
