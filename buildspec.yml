@@ -17,7 +17,7 @@ phases:
       - echo `cat /etc/system-release`
       - echo `pwd`
       - echo `cat /etc/passwd`
-      - echo `adduser batchuser -p password`
+      - echo `adduser batchuser`
       - echo `cat /etc/passwd`
       - echo `su - batchuser; whoami`
       - echo `pwd`
