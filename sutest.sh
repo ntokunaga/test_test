@@ -2,10 +2,10 @@
 
 
 echo sutestStart!
+echo `su - batchuser; whoami`
 echo `pwd`
 echo pathresult!
 echo $(cd $(dirname $0) && pwd)
-sudo su - batchuser
 echo `pwd`
 echo `ls -l`
 mkdir -p $(cd $(dirname $0) && pwd)/dev
