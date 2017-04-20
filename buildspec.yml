@@ -8,18 +8,15 @@ phases:
   install:
     commands:
       - echo pre_build on `date`
+      - echo `yum update -y` 
+      - echo `yum install expect`
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
       - echo Test started on `date`
-      - echo `cat /etc/system-release`
-      - echo `pwd`
-      - echo `cat /etc/passwd`
-      - echo `sh ./sutest.sh`
-      - echo `ls -l`
-      - echo `cat /etc/passwd`
+
   post_build:
     commands:
       - echo Nothing to do in the pre_build phase...
