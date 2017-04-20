@@ -15,6 +15,9 @@ phases:
     commands:
       - echo Test started on `date`
       - echo `cat /etc/system-release`
+      - echo `sudo adduser batchuser -p password`
+      - echo `su batchuser`
+      - echo `pwd`
   post_build:
     commands:
       - echo Nothing to do in the pre_build phase...
