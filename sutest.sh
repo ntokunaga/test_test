@@ -23,5 +23,7 @@ send -- \"hogehoge\n\"
 send -- \"exit\n\"
 "
 echo `pwd`
+echo `cd /`
+echo `pwd`
 echo sutestFinish!
 
