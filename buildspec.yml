@@ -2,13 +2,13 @@ version: 0.1
 
 environment_variables:
   plaintext:
-    batchuser_pass: "passWord"
+    batchuser_pass: "aaaa"
 
 phases:
   install:
     commands:
       - echo pre_build on `date`
-      - echo `useradd testtest -P batchuser_pass`
+      - echo `useradd testtest -p batchuser_pass`
       - echo `cat /etc/passwd`
 
   pre_build:
