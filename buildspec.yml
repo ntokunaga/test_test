@@ -15,8 +15,9 @@ phases:
       - echo `runuser -l testtest -c "ls -l"`
       - echo `ls -l`
       - echo `printenv env1`
-      - echo `runuser -l testtest -c " export env3:$env1"`
       - echo `aws s3 ls`
+      - echo `aws s3 cp s3://ir-etl-dev-tokyo/logs/693162eb27b8_1484312613635_00000f94_noticeErr.txt .`
+      - echo `ls -l`
 
   pre_build:
     commands:
