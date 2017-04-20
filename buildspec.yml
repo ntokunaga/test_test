@@ -14,6 +14,9 @@ phases:
       - echo `runuser -l testtest -c "touch text.txt"`
       - echo `runuser -l testtest -c "ls -l"`
       - echo `ls -l`
+      - echo `runuser -l testtest -c "env1"`
+      - echo `runuser -l testtest -c "env2"`      
+
 
   pre_build:
     commands:
