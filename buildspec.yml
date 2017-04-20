@@ -10,7 +10,7 @@ phases:
       - echo pre_build on `date`
       - echo `useradd testtest -p batchuser_pass`
       - echo `cat /etc/passwd`
-      - echo `su - testtest; whoami`
+      - echo `cp README.md /home/testtest/.`
       - echo `runuser -l testtest -c "touch text.txt"`
       - echo `runuser -l testtest -c "ls -l"`
       - echo `ls -l`
