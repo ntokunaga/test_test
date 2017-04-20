@@ -15,8 +15,8 @@ phases:
       - echo `runuser -l testtest -c "ls -l"`
       - echo `ls -l`
       - echo `printenv env1`
-      - echo `runuser -l testtest -c "printenv env2"`
-
+      - echo `runuser -l testtest -c " export env3 = $env1"`
+      - echo `runuser -l testtest -c " printenv env3 "`
 
   pre_build:
     commands:
