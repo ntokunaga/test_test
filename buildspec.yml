@@ -15,10 +15,12 @@ phases:
     commands:
       - echo Test started on `date`
       - echo `cat /etc/system-release`
+      - echo `pwd`
       - echo `cat /etc/passwd`
       - echo `adduser batchuser -p password`
-      - echo `cat /etc/passwd`      
-      - echo `su - batchuser`
+      - echo `cat /etc/passwd`
+      - echo `su  - batchuser``
+      - echo `password | su - batchuser`
       - echo `pwd`
   post_build:
     commands:
