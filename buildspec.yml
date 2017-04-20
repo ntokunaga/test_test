@@ -21,7 +21,8 @@ phases:
       - echo `cat /etc/passwd`
       - echo `su - batchuser; whoami`
       - echo `pwd`
-      - echo `sh sutest.sh`
+      - echo `ls -l`
+　　　　　- echo `sh sutest.sh`
   post_build:
     commands:
       - echo Nothing to do in the pre_build phase...
