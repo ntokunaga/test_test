@@ -8,27 +8,12 @@ phases:
   install:
     commands:
       - echo pre_build on `date`
-      - sudo apt-get update -y
-      - sudo apt-get -y install yum
-      - sudo apt-get -y install groff
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
       - echo Test started on `date`
-      - echo `aws help`
-      - echo `pwd`
-      - echo `ls -l`
-      - echo `cat /etc/passwd`
-      - echo `cat /etc/lsb-release`
-      - sudo useradd -m -s /bin/bash  batchuser
-      - echo batchuser:passWord | /usr/sbin/chpasswd
-      - echo `cat /etc/passwd`
-      - echo `ls -l /`
-      - sudo sh sutest.sh
-      - echo `ls -l`
-      - echo Test completed on `date`
   post_build:
     commands:
       - echo Nothing to do in the pre_build phase...
