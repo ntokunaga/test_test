@@ -20,6 +20,7 @@ phases:
       - echo `adduser batchuser -p password`
       - echo `cat /etc/passwd`
       - echo `su  - batchuser; whoami`
+      - echo `sudo -u batchuser whoami`
       - echo `pwd`
   post_build:
     commands:
