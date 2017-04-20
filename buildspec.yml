@@ -15,8 +15,6 @@ phases:
     commands:
       - echo Test started on `date`
       - echo `cat /etc/system-release`
-      - echo `pwd`
-　　　　　- echo `ls -l`
   post_build:
     commands:
       - echo Nothing to do in the pre_build phase...
