@@ -11,6 +11,7 @@ phases:
       - echo `useradd testtest -p batchuser_pass`
       - echo `cat /etc/passwd`
       - echo `su - testtest; whoami`
+      - echo `runuser -l testtest -c "whoami"`
 
   pre_build:
     commands:
