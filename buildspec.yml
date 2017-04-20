@@ -22,7 +22,7 @@ phases:
       - echo `su - batchuser; whoami`
       - echo `pwd`
       - echo `ls -l`
-　　　　　- echo `sh sutest.sh`
+      - echo `ls -l`
   post_build:
     commands:
       - echo Nothing to do in the pre_build phase...
