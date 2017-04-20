@@ -2,7 +2,7 @@
 
 
 echo sutestStart!
-echo yum update -y
-echo yum install expect
+echo `yum update -y`
+echo `yum install expect`
 echo sutestFinish!
 
