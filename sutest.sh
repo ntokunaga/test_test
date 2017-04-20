@@ -15,5 +15,13 @@ send -- \"hogehoge\n\"
 expect \"passwd: all authentication tokens updated successfully.\"
 send -- \"exit\n\"
 "
+
+expect -c "
+spawn su UserName
+expect \"Password:\"
+send -- \"hogehoge\n\"
+send -- \"exit\n\"
+"
+echo `pwd`
 echo sutestFinish!
 
