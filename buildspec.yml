@@ -11,7 +11,7 @@ phases:
       - echo `useradd testtest -p batchuser_pass`
       - echo `cat /etc/passwd`
       - echo `su - testtest; whoami`
-      - echo `runuser -l testtest -c "whoami; pwd; touch text.txt"`
+      - echo `runuser -l testtest -c "whoami; pwd; cd ~; touch text.txt; ls -l"`
       - echo `ls -l`
 
   pre_build:
