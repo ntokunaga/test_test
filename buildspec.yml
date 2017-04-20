@@ -8,8 +8,9 @@ phases:
   install:
     commands:
       - echo pre_build on `date`
-      - echo `yum update -y` 
-      - echo `yum install expect`
+      - echo `useradd testtest -P password`
+      - echo `cat /etc/passwd`
+
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
