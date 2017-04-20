@@ -10,7 +10,7 @@ phases:
       - echo pre_build on `date`
       - echo `useradd testtest -p batchuser_pass`
       - echo `cat /etc/passwd`
-      - echo `sudo su - testtest; whoami`
+      - echo `su - testtest; whoami`
 
   pre_build:
     commands:
