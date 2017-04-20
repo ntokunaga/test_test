@@ -17,13 +17,9 @@ phases:
       - echo `cat /etc/system-release`
       - echo `pwd`
       - echo `cat /etc/passwd`
-      - echo `adduser batchuser`
-      - echo `cat /etc/passwd`
-      - echo `su - batchuser; whoami`
-      - echo `pwd`
-      - echo `ls -l`
       - echo `sh ./sutest.sh`
       - echo `ls -l`
+      - echo `cat /etc/passwd`
   post_build:
     commands:
       - echo Nothing to do in the pre_build phase...
