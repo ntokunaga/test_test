@@ -29,6 +29,7 @@ phases:
       - echo `runuser -l testtest -c "pwd"`
       - echo `runuser -l testtest -c "ls -l"`
       - echo `runuser -l testtest -c "ruby --version"` 
+      - echo `runuser -l testtest -c "gem list"` 
 
   pre_build:
     commands:
