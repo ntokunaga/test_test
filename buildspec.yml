@@ -29,13 +29,16 @@ phases:
       - echo `runuser -l testtest -c "pwd"`
       - echo `runuser -l testtest -c "ls -l"`
       - echo `runuser -l testtest -c "ruby --version"` 
-      - echo `runuser -l testtest -c "gem list"` 
-
+      
       - echo `gem install aws-sdk`
+      - echo `gem install parallel `
+      - echo `runuser -l testtest -c "gem list"` 
+      
       - echo `mv ruby_test.rb /home/testtest/.`
       - echo `chown testtest:testtest /home/testtest/ruby_test.rb`
       - echo `runuser -l testtest -c "ruby /home/testtest/ruby_test.rb"`
       - echo `runuser -l testtest -c "pwd"`
+      - echo `yum list installed`
       
   pre_build:
     commands:
