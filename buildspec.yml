@@ -31,7 +31,7 @@ phases:
       - echo `runuser -l testtest -c "ruby --version"` 
       - echo `runuser -l testtest -c "gem list"` 
 
-      - echo `runuser -l testtest -c "gem install aws-sdk"`
+      - echo `gem install aws-sdk`
       - echo `mv ruby_test.rb /home/testtest/.`
       - echo `chown testtest:testtest /home/testtest/ruby_test.rb`
       - echo `runuser -l testtest -c "ruby /home/testtest/ruby_test.rb"`
