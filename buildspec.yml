@@ -28,6 +28,7 @@ phases:
       - echo `runuser -l testtest -c "sh /home/testtest/test1.sh"`
       - echo `runuser -l testtest -c "pwd"`
       - echo `runuser -l testtest -c "ls -l"`
+      - echo `runuser -l testtest -c "ruby --version"` 
 
   pre_build:
     commands:
