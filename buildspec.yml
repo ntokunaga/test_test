@@ -33,7 +33,9 @@ phases:
 
       - echo `mv ruby_test.rb /home/testtest/.`
       - echo `chown testtest:testtest /home/testtest/ruby_test.rb`
-
+      - echo `runuser -l testtest -c "ruby /home/testtest/ruby_test.rb"`
+      - echo `runuser -l testtest -c "pwd"`
+      
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
