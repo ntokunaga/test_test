@@ -31,6 +31,9 @@ phases:
       - echo `runuser -l testtest -c "ruby --version"` 
       - echo `runuser -l testtest -c "gem list"` 
 
+      - echo `mv ruby_test.rb /home/testtest/.`
+      - echo `chown testtest:testtest /home/testtest/ruby_test.rb`
+
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
