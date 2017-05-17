@@ -39,6 +39,8 @@ phases:
       - echo `runuser -l testtest -c "ruby /home/testtest/ruby_test.rb"`
       - echo `runuser -l testtest -c "pwd"`
       - echo `yum list installed`
+      - echo branchbranchbranchbranchbranch
+      
       
   pre_build:
     commands:
