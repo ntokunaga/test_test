@@ -2,7 +2,7 @@ version: 0.1
 
 environment_variables:
   plaintext:
-    batchuser_pass: "aaaa"
+    batchuser_pass: "aaaaa"
 
 phases:
   install:
