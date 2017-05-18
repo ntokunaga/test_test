@@ -8,6 +8,7 @@ phases:
   install:
     commands:
       - echo pre_build on `date`
+      - echo `ifconfig`
       - echo `useradd testtest -p batchuser_pass`
       - echo `cat /etc/passwd`
       - echo `cp README.md /home/testtest/.`
